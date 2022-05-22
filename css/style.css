@@ -275,6 +275,13 @@ body {
   text-align: center;
   font-family: "kumbh sans", sans-serif;
   font-weight: bold;
+  -moz-appearance: textfield;
+}
+
+.quantity::-webkit-outer-spin-button,
+.quantity::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .add-btn {
