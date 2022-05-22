@@ -197,21 +197,21 @@ body {
   text-transform: uppercase;
   color: hsl(26, 100%, 55%);
   font-weight: 700;
-  font-size: 0.8rem;
   letter-spacing: 2px;
   margin: 10px 0;
+  font-size: 0.8rem;
 }
 
 .product-header {
   margin-bottom: 10px;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
 }
 
 .product-description {
+  font-size: 0.8rem;
   line-height: 1.5;
   color: gray;
   margin-bottom: 10px;
-  font-size: 0.8rem;
 }
 
 .price {
@@ -299,6 +299,7 @@ body {
   color: white;
   border-radius: 10px;
   font-weight: 700;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .add-btn:hover {
@@ -352,16 +353,6 @@ body {
   transform: scale(1);
 }
 
-@media (min-height: 700px) {
-  .product-header {
-    font-size: 1.75rem;
-  }
-
-  .product-description {
-    font-size: 1rem;
-  }
-}
-
 @media (min-width: 900px) {
   body {
     display: flex;
@@ -389,11 +380,11 @@ body {
 
   .navbar {
     width: 70%;
+    min-height: 100px;
     display: flex;
     margin: 0 auto 20px auto;
     align-items: center;
     border-bottom: 1px solid #ccc;
-    height: 100px;
   }
 
   .nav-item {
@@ -453,6 +444,11 @@ body {
   .text-section {
     width: 500px;
     margin: 0;
+  }
+
+  .brand-name,
+  .product-description {
+    font-size: 1rem;
   }
 
   .product-thumbnail {
@@ -580,10 +576,6 @@ body {
 }
 
 @media (min-width: 1600px) {
-  .brand-name {
-    font-size: 1rem;
-  }
-
   .product-img,
   .lightbox-product,
   .lightbox-thumbnails {
